@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Sparkles } from "lucide-react";
 import { SignInButton, SignUpButton, SignedIn, SignedOut } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
-import { HeroVisual } from "./hero-visual";
+import { HeroVisual } from "./components/landing/components/landing/components/landing/components/landing/hero-visual";
 
 export function HeroSection() {
   return (
