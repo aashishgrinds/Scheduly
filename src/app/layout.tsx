@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
-import { Navbar } from "@/components/landing/Navbar";
-import { Footer } from "@/components/landing/Footer";
+import { LandingHeader as Navbar } from "@/components/landing/landing-header";
+import { LandingFooter as Footer } from "@/components/landing/landing-footer";
 import "./globals.css";
 
 const geistSans = Geist({

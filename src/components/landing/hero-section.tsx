@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Sparkles } from "lucide-react";
 import { SignInButton, SignUpButton, SignedIn, SignedOut } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
-import { HeroVisual } from "./components/landing/components/landing/components/landing/components/landing/hero-visual";
+import { HeroVisual } from "./hero-visual";
 
 export function HeroSection() {
   return (
@@ -20,8 +20,8 @@ export function HeroSection() {
           </h1>
           <p className="mt-6 text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             Calvero connects to your Google Calendar, shows your real-time
-            availability, and lets anyone book time with you instantly. No
-            more &quot;what time works for you?&quot; emails.
+            availability, and lets anyone book time with you instantly. No more
+            &quot;what time works for you?&quot; emails.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <SignedOut>
