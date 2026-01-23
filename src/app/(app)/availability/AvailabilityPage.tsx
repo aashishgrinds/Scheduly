@@ -1,5 +1,4 @@
 import { auth } from "@clerk/nextjs/server";
-import { redirect } from "next/navigation";
 import { startOfWeek, addWeeks } from "date-fns";
 import { sanityFetch } from "@/sanity/lib/live";
 import { USER_WITH_AVAILABILITY_QUERY } from "@/sanity/queries/users";
@@ -18,9 +17,6 @@ import type {
 export default async function AvailabilityPage() {
   const { userId } = await auth();
 
-  if (!userId) {
-    redirect("/");
-  }
 
   // Fetch availability, bookings, and Google busy times in parallel
   const now = new Date();
